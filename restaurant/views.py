@@ -1,13 +1,13 @@
 # from django.http import HttpResponse
 from django.shortcuts import render
-from .forms import BookingForm
-from .models import Menu
 from django.core import serializers
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+from .models import Menu
 from .models import Booking
+from .forms import BookingForm
 from datetime import datetime
 import json
-from django.views.decorators.csrf import csrf_exempt
-from django.http import HttpResponse
 
 
 # Create your views here.
